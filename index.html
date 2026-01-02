@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doni-Danuar</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+    <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+    <img src="assets/img/onepiece.png"
+        alt="One Piece Flag"
+        width="32"
+        height="32"
+        class="me-2"
+        style="border-radius:13px; object-fit:contain;">DANUAR
+    </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#music">Musik</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-bg text-white text-center py-5">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    <div class="stars4"></div>
+    <div class="stars5"></div>
+    <div class="container pt-5 mt-5">
+      <img src="assets/img/profil.jpeg" alt="Doni Danuar" class="rounded-circle mb-3 border border-3 border-white" width="150" height="150" style="object-fit: cover;">
+      <h1 class="display-4 fw-bold">Doni Danuar</h1>
+      <p class="lead"> BERSIAPLAH </p>
+      <div class="d-flex justify-content-center gap-3 mt-3">
+        <a href="https://www.instagram.com/daanuaar?igsh=aTNidDM1aTVyczJq" class="text-white" target="_blank" rel="noopener">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://open.spotify.com/playlist/4PjUXZRAXkyr9scU22O0uO?si=VlbWeotbQ5q5Yu28rMA9JA" class="text-white" target="_blank" rel="noopener">
+          <i class="fab fa-spotify fa-2x"></i>
+        </a><a href="mailto:donidanuar86@gmail.com" class="text-white" target="_blank" rel="noopener">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+<!-- Music Player Section -->
+<section id="music" class="py-5 text-center">
+  <div class="container">
+    <h2 class="text-center mb-4 text-danger fw-bold">Putar Lagu</h2>
+    <p class="mb-4">Di saranin sambil dengerin musik 😁</p>
+
+    <div class="music-player mx-auto" style="max-width: 500px;">
+      <!-- Cover / Judul -->
+      <div class="mb-3">
+        <p class="fw-bold text-white mb-1">"Memories - Maki Otsuki"</p>
+      </div>
+
+      <!-- Kontrol Play/Pause -->
+      <div class="d-flex justify-content-center align-items-center gap-4 mb-3">
+        <button id="playPauseBtn" class="btn btn-lg rounded-circle" style="width: 70px; height: 70px; background: rgba(255,255,255,0.1); border: 2px solid #d32f2f;">
+          <i class="fas fa-play text-white" id="playIcon"></i>
+          <i class="fas fa-pause text-white d-none" id="pauseIcon"></i>
+        </button>
+      </div>
+
+    <!-- Progress Bar -->
+    <div class="music-progress">
+    <div id="progressBar" class="music-progress-bar"></div>
+    </div>
+
+
+      <!-- Waktu -->
+      <div class="d-flex justify-content-between text-muted small mt-2">
+        <span id="currentTime">0:00</span>
+        <span id="totalDuration">0:00</span>
+      </div>
+    </div>
+
+    <!-- Audio Element (tersembunyi) -->
+    <audio id="bgMusic">
+      <source src="assets/audio/theme.mpeg" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-danger fw-bold">Tentang Saya</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <p class="fs-5">
+            Halo👋! Nama saya <strong>Doni Danuar</strong>, seorang mahasiswa di salah satu perguruan tinggi di <strong>Kota Pontianak</strong>.
+          </p>
+          <p class="fs-5">
+            Di waktu luang, saya suka <strong>bernyanyi</strong> dan <strong>mendengarkan musik</strong> — terutama lagu-lagu yang bersemangat atau bertema petualangan!
+          </p>
+          <p class="fs-5">
+            Saya juga penggemar anime <strong class="text-danger">One Piece</strong>! Mimpi saya sederhana: hidup bebas seperti bajak laut, mengejar mimpi tanpa batas! 🌊⚓
+          </p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="text-center">
+            <img src="assets/img/luffy.jpg" alt="Luffy - One Piece" width="200" class="img-fluid rounded shadow">
+            <p class="mt-2 text-white">"Jika kamu lapar, makanlah." — Monkey .D. Luffy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-danger fw-bold">Galeri</h2>
+      <div class="row g-3">
+        <div class="col-md-4 col-sm-6">
+          <img src="assets/img/photo1.jpeg" class="img-fluid rounded shadow" alt="Foto 1">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="assets/img/photo2.jpeg" class="img-fluid rounded shadow" alt="Foto 2">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="assets/img/photo3.jpeg" class="img-fluid rounded shadow" alt="Foto 3">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="assets/img/photo4.jpeg" class="img-fluid rounded shadow" alt="Foto 3">
+        </div>
+        <!-- Tambahkan lebih banyak foto jika mau -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2026 Danuar. Dibuat dengan 💙 dan semangat One Piece!</p>
+    <p class="small">"Go Outside & Feel Life"</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
